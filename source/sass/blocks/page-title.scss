@@ -1,0 +1,8 @@
+.page-title {
+  @include margin-padding-reset;
+  color: $white-color;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 28px;
+  text-align: center;
+}
