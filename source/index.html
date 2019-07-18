@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Пинк</title>
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
@@ -13,16 +15,16 @@
         <button class="main-nav__toggle" type="button"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-menu">
-            <li class="site-menu__item"><a>главная</a></li>
-            <li class="site-menu__item"><a href="photo.html">фотографии</a></li>
-            <li class="site-menu__item"><a href="form.html">конкурс</a></li>
-            <li class="site-menu__item"><a href="https://htmlacademy.ru" target="_blank">html academy</a></li>
+            <li class="site-menu__item"><a class="site-menu__link">главная</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="photo.html">фотографии</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="form.html">конкурс</a></li>
+            <li class="site-menu__item"><a class="site-menu__link" href="https://htmlacademy.ru" target="_blank">html academy</a></li>
           </ul>
         </div>
       </nav>
       <h1 class="visually-hidden">Мобильное приложение Пинк</h1>
       <section class="download-app">
-        <a class="button download-app__button" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
+        <a class="download-app__button button button--round" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
         <ul class="download-app__list">
           <li class="download-app__item download-app__item--apple">
             <a href="https://www.apple.com/ru/itunes/"><span class="visually-hidden">Скачать для apple</span></a>
@@ -56,6 +58,75 @@
             <p class="features__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
           </li>
         </ul>
+      </section>
+      <section class="feedback">
+        <h2 class="visually-hidden">Отзывы о приложении</h2>
+        <ul class="feedback__list feedback-slider">
+          <li class="feedback-slider__item">
+            <p class="feedback-slider__author">Николай Петров</p>
+            <p class="feedback-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+          </li>
+<!--          <li class="feedback-slider__item">-->
+<!--            <p class="feedback-slider__author">Николай Петров</p>-->
+<!--            <p class="feedback-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>-->
+<!--          </li>-->
+<!--          <li class="feedback-slider__item">-->
+<!--            <p class="feedback-slider__author">Николай Петров</p>-->
+<!--            <p class="feedback-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>-->
+<!--          </li>-->
+        </ul>
+        <div class="feedback__controls slider-controls">
+          <button class="slider-controls__button" type="button">1</button>
+          <button class="slider-controls__button" type="button">2</button>
+          <button class="slider-controls__button" type="button">3</button>
+        </div>
+      </section>
+      <section class="tariffs">
+        <h2 class="visually-hidden">Тарифы на приложение</h2>
+        <table class="tariffs__table tariffs-table">
+          <thead>
+            <tr>
+              <th class="tariffs-table__header"><span class="visually-hidden">Название тарифов</span></th>
+              <th class="tariffs-table__header">
+                <span class="tariffs-table__name">Стандарт</span>
+                <span class="tariffs-table__price">3,99 USD</span>
+              </th>
+              <th class="tariffs-table__header">
+                <span class="tariffs-table__name">Стандарт</span>
+                <span class="tariffs-table__price">3,99 USD</span>
+              </th>
+              <th class="tariffs-table__header">
+                <span class="tariffs-table__name">Стандарт</span>
+                <span class="tariffs-table__price">3,99 USD</span>
+              </th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="tariffs-table__cell">Розовый фильтр</td>
+              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
+              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
+              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__cell">Смайлики</td>
+              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
+              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
+              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
+            </tr>
+            <tr>
+              <td class="tariffs-table__cell">Комментарии</td>
+              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
+              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
+              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="tariffs__controls slider-controls">
+          <button class="slider-controls__button" type="button">1</button>
+          <button class="slider-controls__button" type="button">2</button>
+          <button class="slider-controls__button" type="button">3</button>
+        </div>
       </section>
     </main>
     <footer>

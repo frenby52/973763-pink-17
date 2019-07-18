@@ -1,0 +1,15 @@
+.tariffs-table__header {
+  background-color: $dark-blue-color;
+  color: $white-color;
+  line-height: 30px;
+}
+
+.tariffs-table__name {
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.tariffs-table__price {
+  font-size: 24px;
+  font-weight: 300;
+}

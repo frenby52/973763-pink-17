@@ -1,0 +1,27 @@
+.download-app {
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-repeat: no-repeat;
+}
+
+.download-app__button {
+  border-color: $white-color;
+  color: $white-color;
+
+  &:hover {
+    color: $pink-color;
+    background-color: $white-color;
+  }
+
+  &:active {
+    color: transparentize($pink-color, 0.7);
+  }
+}
+
+.download-app__list {
+  @include list-style-reset;
+}
+
+.download-app__text {
+  @include margin-padding-reset;
+  font-weight: 300;
+}
