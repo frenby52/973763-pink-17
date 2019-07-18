@@ -1,0 +1,25 @@
+.features__lead {
+  @include margin-padding-reset;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 31px;
+}
+
+.features__list {
+  @include list-style-reset;
+  background-color: $lightgray-color-bg;
+  background-image: url("../img/iphone-screen-mobile@1x.png");
+  background-repeat: no-repeat;
+}
+
+.features__title {
+  @include margin-padding-reset;
+  font-size: 18px;
+  font-weight: 700;
+  color: $black-color;
+}
+
+.features__text {
+  @include margin-padding-reset;
+}
+

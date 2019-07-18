@@ -1,0 +1,18 @@
+.site-menu {
+  @include list-style-reset;
+  box-shadow: 0px 1px 0 0 $black-color;
+}
+
+.site-menu__item {
+  box-shadow: 0 1px 0 $black-color, inset 0 1px 0 transparentize($white-color, 0.85);
+}
+
+.site-menu__link {
+  font: inherit;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 32px;
+  color: $white-color;
+  text-transform: uppercase;
+}

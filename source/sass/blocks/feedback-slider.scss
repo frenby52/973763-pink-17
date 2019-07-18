@@ -1,0 +1,16 @@
+.feedback-slider {
+  @include list-style-reset;
+}
+
+.feedback-slider__author {
+  @include margin-padding-reset;
+  color: $black-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.feedback-slider__text {
+  @include margin-padding-reset;
+  line-height: 30px;
+}
