@@ -3,7 +3,6 @@
 }
 
 .feedback-slider__author {
-  @include margin-padding-reset;
   color: $black-color;
   font-size: 18px;
   font-weight: 700;
@@ -11,6 +10,5 @@
 }
 
 .feedback-slider__text {
-  @include margin-padding-reset;
   line-height: 30px;
 }

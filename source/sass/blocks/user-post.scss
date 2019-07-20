@@ -3,12 +3,7 @@
   line-height: 24px;
 }
 
-.user-post__picture {
-  @include margin-padding-reset;
-}
-
 .user-post__author {
-  @include margin-padding-reset;
   font-size: 14px;
   font-weight: 700;
 }
@@ -20,13 +15,11 @@
 }
 
 .user-post__text {
-  @include margin-padding-reset;
   font-size: 14px;
   font-weight: 400;
 }
 
 .user-post__like {
-  @include margin-padding-reset;
   color: $pink-color;
   font-size: 12px;
   font-weight: 400;
