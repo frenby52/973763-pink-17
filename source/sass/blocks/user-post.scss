@@ -1,6 +1,23 @@
 .user-post {
-  background-color: $lightgray-color-bg;
   line-height: 24px;
+  background-color: $lightgray-color-bg;
+}
+
+.user-post--panorama {
+  background-color: $white-color;
+}
+
+.user-post__wrapper-panorama {
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 280px;
+}
+
+.user-post__content-panorama {
+  display: flex;
+  flex-direction: column;
+  background-color: $lightgray-color-bg;
 }
 
 .user-post__author {
@@ -24,4 +41,30 @@
   font-size: 12px;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+@media (min-width: $tablet-width) {
+  .user-post__wrapper-panorama {
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 620px;
+  }
+
+  .user-post__content-panorama {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .user-post__text--panorama {
+    order: 1;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .user-post__wrapper-panorama {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 940px;
+  }
 }

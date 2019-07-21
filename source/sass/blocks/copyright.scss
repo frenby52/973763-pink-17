@@ -1,4 +1,23 @@
+.copyright {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 .copyright__text {
   color: $font-color-main;
   line-height: 18px;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright {
+    width: 155px;
+    justify-content: flex-end;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .copyright__text {
+    font-size: 18px;
+  }
 }

@@ -1,3 +1,13 @@
 .social {
   @include list-style-reset;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media (min-width: $tablet-width) {
+  .social {
+    width: 158px;
+    justify-content: space-between;
+  }
 }
