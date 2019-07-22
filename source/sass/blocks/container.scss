@@ -1,5 +1,12 @@
 .container {
-  box-sizing: border-box;
   margin: 0 auto;
-  padding: 0 20px;
+  min-width: 280px;
+  max-width: 940px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (min-width: $desktop-width) {
+  padding-left: 10px;
+  padding-right: 10px;
 }
