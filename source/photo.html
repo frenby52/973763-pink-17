@@ -2,121 +2,133 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
-    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
     <header class="page-header">
-      <a class="page-header__logo" href="index.html">
-        <img class="page-header__logo-image" src="" alt="Мобильное приложение Пинк" width="320" height="66">
-      </a>
-      <nav class="main-nav">
-        <button class="main-nav__toggle" type="button"></button>
-        <div class="main-nav__wrapper">
-          <ul class="main-nav__list site-menu">
-            <li class="site-menu__item"><a class="site-menu__link" href="index.html">главная</a></li>
-            <li class="site-menu__item"><a class="site-menu__link">фотографии</a></li>
-            <li class="site-menu__item"><a class="site-menu__link" href="form.html">конкурс</a></li>
-            <li class="site-menu__item"><a class="site-menu__link" href="https://htmlacademy.ru" target="_blank">html academy</a></li>
-          </ul>
+      <div class="page-header__wrapper">
+        <div class="page-header__main-nav">
+          <div class="page-header__logo-wrapper">
+            <a class="page-header__logo">
+              <img class="page-header__logo-image" src="" alt="Мобильное приложение Пинк" width="320" height="66">
+            </a>
+            <button class="page-header__toggle" type="button" aria-label="Меню"></button>
+          </div>
+          <nav class="main-nav">
+            <!--            <div class="main-nav__wrapper">-->
+            <ul class="main-nav__list site-menu">
+              <li class="site-menu__item"><a class="site-menu__link" href="index.html">Главная</a></li>
+              <li class="site-menu__item"><a class="site-menu__link">Фотографии</a></li>
+              <li class="site-menu__item"><a class="site-menu__link" href="form.html">Конкурс</a></li>
+              <li class="site-menu__item"><a class="site-menu__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a></li>
+            </ul>
+            <!--            </div>-->
+          </nav>
         </div>
-      </nav>
-      <h1 class="page-title">Фотографии пользователей</h1>
+      </div>
+      <h1 class="page-header__title page-title">Фотографии пользователей</h1>
     </header>
     <main class="page-main">
       <section class="user-photo">
         <h2 class="user-photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h2>
-        <article class="user-photo__post user-post user-post--panorama">
+        <article class="user-photo__post user-photo__post--panorama user-post user-post--panorama">
           <a class="user-post__link" href="#">
             <p class="user-post__picture">
               <img class="user-post__image" src="" alt="Фото пользователя" width="320" height="137">
             </p>
           </a>
-          <p class="user-post__author">Анна<span class="user-post__time">(5 минут назад)</span></p>
-          <p class="user-post__text">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую транслацию в перископе, задавайте свои вопросы!</p>
-          <p class="user-post__like"><a class="user-post__like-icon" href="#">&#9825;</a>Нравится: 215</p>
+          <div class="user-post__wrapper-panorama">
+            <div class="user-post__content-panorama">
+              <p class="user-post__author">Анна<span class="user-post__time">(5 минут назад)</span></p>
+              <p class="user-post__text user-post__text--panorama">Прыгать или нет? Напишите в коментарии свой совет и смотрите прямую трансляцию в перископе, задавайте свои вопросы!</p>
+              <p class="user-post__like"><a class="user-post__like-icon" href="#">&#9825;</a>Нравится: 215</p>
+            </div>
+          </div>
         </article>
-        <article class="user-photo__post user-post">
-          <a class="user-post__link" href="#">
-            <p class="user-post__picture">
-              <img class="user-post__image" src="" alt="Фото пользователя" width="280" height="180">
-            </p>
-          </a>
-          <p class="user-post__author">Левон<span class="user-post__time">(5 часов назад)</span></p>
-          <p class="user-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
-          <p class="user-post__like"><a class="user-post__like-icon" href="#">&#9825;</a>Нравится: 356</p>
-        </article>
-        <article class="user-photo__post user-post">
-          <a class="user-post__link" href="#">
-            <p class="user-post__picture">
-              <img class="user-post__image" src="" alt="Фото пользователя" width="280" height="180">
-            </p>
-          </a>
-          <p class="user-post__author">Антон<span class="user-post__time">(12 часов назад)</span></p>
-          <p class="user-post__text">Соседи будут рады!</p>
-          <p class="user-post__like"><a class="user-post__like-icon" href="#">&#9825;</a>Нравится: 666</p>
-        </article>
-        <article class="user-photo__post user-post">
-          <a class="user-post__link" href="#">
-            <p class="user-post__picture">
-              <img class="user-post__image" src="" alt="Фото пользователя" width="280" height="180">
-            </p>
-          </a>
-          <p class="user-post__author">Борис<span class="user-post__time">(20 часов назад)</span></p>
-          <p class="user-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
-          <p class="user-post__like"><a class="user-post__like-icon" href="#">&#9825;</a>Нравится: 215</p>
-        </article>
-        <article class="user-photo__post user-post">
-          <a class="user-post__link" href="#">
-            <p class="user-post__picture">
-              <img class="user-post__image" src="" alt="Фото пользователя" width="280" height="180">
-            </p>
-          </a>
-          <p class="user-post__author">Сергей<span class="user-post__time">(25 часов назад)</span></p>
-          <p class="user-post__text">Самая кубанская в мире!</p>
-          <p class="user-post__like"><a class="user-post__like-icon" href="#">&#9825;</a>Нравится: 4</p>
-        </article>
-        <article class="user-photo__post user-post">
-          <a class="user-post__link" href="#">
-            <p class="user-post__picture">
-              <img class="user-post__image" src="" alt="Фото пользователя" width="280" height="180">
-            </p>
-          </a>
-          <p class="user-post__author">Максим<span class="user-post__time">(40 часов назад)</span></p>
-          <p class="user-post__text">Где снег-то?</p>
-          <p class="user-post__like"><a class="user-post__like-icon" href="#">&#9825;</a>Нравится: 150</p>
-        </article>
-        <article class="user-photo__post user-post">
-          <a class="user-post__link" href="#">
-            <p class="user-post__picture">
-              <img class="user-post__image" src="" alt="Фото пользователя" width="280" height="180">
-            </p>
-          </a>
-          <p class="user-post__author">Надежда<span class="user-post__time">(45 часов назад)</span></p>
-          <p class="user-post__text">Всем GM и взаимные лайки!</p>
-          <p class="user-post__like"><a class="user-post__like-icon" href="#">&#9825;</a>Нравится: 2560</p>
-        </article>
+        <div class="user-photo__wrapper">
+          <article class="user-photo__post user-post">
+            <a class="user-post__link" href="#">
+              <p class="user-post__picture">
+                <img class="user-post__image" src="" alt="Фото пользователя" width="280" height="180">
+              </p>
+            </a>
+            <p class="user-post__author">Левон<span class="user-post__time">(5 часов назад)</span></p>
+            <p class="user-post__text">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+            <p class="user-post__like"><a class="user-post__like-icon" href="#">&#9825;</a>Нравится: 356</p>
+          </article>
+          <article class="user-photo__post user-post">
+            <a class="user-post__link" href="#">
+              <p class="user-post__picture">
+                <img class="user-post__image" src="" alt="Фото пользователя" width="280" height="180">
+              </p>
+            </a>
+            <p class="user-post__author">Антон<span class="user-post__time">(12 часов назад)</span></p>
+            <p class="user-post__text">Соседи будут рады!</p>
+            <p class="user-post__like"><a class="user-post__like-icon" href="#">&#9825;</a>Нравится: 666</p>
+          </article>
+          <article class="user-photo__post user-post">
+            <a class="user-post__link" href="#">
+              <p class="user-post__picture">
+                <img class="user-post__image" src="" alt="Фото пользователя" width="280" height="180">
+              </p>
+            </a>
+            <p class="user-post__author">Борис<span class="user-post__time">(20 часов назад)</span></p>
+            <p class="user-post__text">Здесь могла быть ваша цитата о высоком и вечном.</p>
+            <p class="user-post__like"><a class="user-post__like-icon" href="#">&#9825;</a>Нравится: 215</p>
+          </article>
+          <article class="user-photo__post user-post">
+            <a class="user-post__link" href="#">
+              <p class="user-post__picture">
+                <img class="user-post__image" src="" alt="Фото пользователя" width="280" height="180">
+              </p>
+            </a>
+            <p class="user-post__author">Сергей<span class="user-post__time">(25 часов назад)</span></p>
+            <p class="user-post__text">Самая кубанская в мире!</p>
+            <p class="user-post__like"><a class="user-post__like-icon" href="#">&#9825;</a>Нравится: 4</p>
+          </article>
+          <article class="user-photo__post user-post">
+            <a class="user-post__link" href="#">
+              <p class="user-post__picture">
+                <img class="user-post__image" src="" alt="Фото пользователя" width="280" height="180">
+              </p>
+            </a>
+            <p class="user-post__author">Максим<span class="user-post__time">(40 часов назад)</span></p>
+            <p class="user-post__text">Где снег-то?</p>
+            <p class="user-post__like"><a class="user-post__like-icon" href="#">&#9825;</a>Нравится: 150</p>
+          </article>
+          <article class="user-photo__post user-post">
+            <a class="user-post__link" href="#">
+              <p class="user-post__picture">
+                <img class="user-post__image" src="" alt="Фото пользователя" width="280" height="180">
+              </p>
+            </a>
+            <p class="user-post__author">Надежда<span class="user-post__time">(45 часов назад)</span></p>
+            <p class="user-post__text">Всем GM и взаимные лайки!</p>
+            <p class="user-post__like"><a class="user-post__like-icon" href="#">&#9825;</a>Нравится: 2560</p>
+          </article>
+        </div>
       </section>
     </main>
-    <footer class="page-footer">
+    <footer class="page-footer container">
       <a class="page-footer__logo">
         <img class="page-footer__logo-image" src="" alt="Мобильное приложение Пинк" width="147" height="40">
       </a>
       <ul class="page-footer__list social">
         <li class="social__item">
-          <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в twitter</span></a>
+          <a class="social__link social__link--twitter" href="#">1<span class="visually-hidden">Мы в twitter</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в facebook</span></a>
+          <a class="social__link social__link--facebook" href="#">2<span class="visually-hidden">Мы в facebook</span></a>
         </li>
         <li class="social__item">
-          <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы в youtube</span></a>
+          <a class="social__link social__link--youtube" href="#">3<span class="visually-hidden">Мы в youtube</span></a>
         </li>
       </ul>
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="copyright__text">Разработано</span>
-        <svg></svg>
+<!--        <svg></svg>-->
       </a>
     </footer>
   </body>

@@ -1,6 +1,17 @@
 .download-app {
+  padding-top: 424px;
+  width: 280px;
   background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-position: 0 110px;
   background-repeat: no-repeat;
+  outline: 2px solid blue;
+}
+
+.download-app__title {
+  display: none;
+  font-size: 40px;
+  font-weight: 300;
+  line-height: normal;
 }
 
 .download-app__button {
@@ -22,6 +33,52 @@
 }
 
 .download-app__text {
-  @include margin-padding-reset;
   font-weight: 300;
+}
+
+@media (min-width: $tablet-width) {
+  .download-app {
+    width: 620px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-position: 0 74px;
+  }
+
+  .download-app__wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+  }
+
+  .download-app__title {
+    display: block;
+    text-align: center;
+  }
+
+  .download-app__text {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .download-app {
+    width: 940px;
+    padding-top: 120px;
+    padding-bottom: 130px;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: 0 99px;
+  }
+
+  .download-app__title {
+    font-size: 50px;
+  }
+
+  .download-app__button {
+    font-size: 21px;
+  }
 }
