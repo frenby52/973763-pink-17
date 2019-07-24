@@ -2,11 +2,7 @@
   @include list-style-reset;
   //display: none;
   text-align: center;
-  box-shadow: 0 1px 0 0 $black-color;
-}
-
-.site-menu__item {
-  box-shadow: 0 1px 0 $black-color, inset 0 1px 0 transparentize($white-color, 0.85);
+  //box-shadow: 0 1px 0 0 $black-color;
 }
 
 .site-menu__link {
@@ -19,11 +15,37 @@
   text-transform: uppercase;
 }
 
+@media (max-width: $mobile-tablet-width) {
+  .site-menu--opened {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: $dark-blue-color;
+  }
+
+  .site-menu__item {
+    border-top: 1px solid #000000;
+    box-shadow: 0 1px 0 $black-color, inset 0 1px 0 transparentize($white-color, 0.85);
+  }
+
+  .site-menu__link {
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 14px;
+  }
+
+  .site-menu--closed {
+    display: none;
+  }
+}
+
 @media (min-width: $desktop-width) {
   .site-menu {
     display: flex;
     justify-content: space-between;
-    width: 640px;
+    width: 620px;
     outline: 2px solid cyan;
   }
 

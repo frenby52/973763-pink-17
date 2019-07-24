@@ -7,13 +7,13 @@
         background-repeat: no-repeat;
         background-position:  50% 0;
         /* По умолчанию показывается мобильный макет */
-        background-image: url( "tmp_img/320i.jpg" );
+        background-image: url( "tmp_img/320i_no.png" );
       }
       /* Планшет */
       @media ( min-width: 660px ) {
         HTML {
           /* Планшетный макет */
-          background-image: url( "tmp_img/660i.jpg" );
+          background-image: url( "tmp_img/660i_no.png" );
         }
       }
       /* Десктоп */
@@ -35,16 +35,17 @@
   <body>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <div class="page-header__main-nav">
+        <div class="page-header__main-nav page-header__main-nav--opened">
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo">
-              <img class="page-header__logo-image" src="" alt="Мобильное приложение Пинк" width="320" height="66">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Мобильное приложение Пинк" width="72" height="22">
             </a>
             <button class="page-header__toggle" type="button" aria-label="Меню"></button>
+<!--            <a href="javascript:window.open('index.html', '','width=320,height=480')">Open!</a>-->
           </div>
           <nav class="main-nav">
             <!--            <div class="main-nav__wrapper">-->
-            <ul class="main-nav__list site-menu">
+            <ul class="main-nav__list site-menu site-menu--opened">
               <li class="site-menu__item"><a class="site-menu__link">Главная</a></li>
               <li class="site-menu__item"><a class="site-menu__link" href="photo.html">Фотографии</a></li>
               <li class="site-menu__item"><a class="site-menu__link" href="form.html">Конкурс</a></li>
@@ -60,14 +61,14 @@
           <p class="download-app__title">Взгляните на жизнь иначе!</p>
           <a class="download-app__button button button--round" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
           <ul class="download-app__list">
-            <li class="download-app__item download-app__item--apple">
-              <a href="https://www.apple.com/ru/itunes/"><span class="visually-hidden">Скачать для apple</span></a>
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--apple" href="https://www.apple.com/ru/itunes/"><span class="visually-hidden">Скачать для apple</span></a>
             </li>
-            <li class="download-app__item download-app__item--android">
-              <a href="https://play.google.com/store/apps"><span class="visually-hidden">Скачать для Android</span></a>
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--android" href="https://play.google.com/store/apps"><span class="visually-hidden">Скачать для Android</span></a>
             </li>
-            <li class="download-app__item download-app__item--windows">
-              <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"><span class="visually-hidden">Скачать для Windows</span></a>
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"><span class="visually-hidden">Скачать для Windows</span></a>
             </li>
           </ul>
           <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -181,5 +182,6 @@
     <footer>
 
     </footer>
+    <script type="text/javascript" src="js/main-menu.js"></script>
   </body>
 </html>

@@ -19,7 +19,28 @@
 
 .page-header__logo-image {
   margin-top: 22px;
-  margin-bottom: 22px;
+  margin-bottom: 18px;
+  width: 72px;
+  height: 22px;
+}
+
+.page-header__toggle {
+  margin-top: 19px;
+  margin-bottom: 25px;
+  width: 24px;
+  height: 23px;
+  background-image: url("../img/icon-menu-cross.svg");
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.page-header__main-nav--closed .page-header__toggle {
+  margin-top: 21px;
+  margin-bottom: 23px;
+  width: 50px;
+  height: 24px;
+  background-image: url("../img/icon-menu-burger.svg");
 }
 
 .page-header__title {
@@ -37,13 +58,32 @@
 
   .page-header__logo-image {
     margin-top: 27px;
-    margin-bottom: 43px;
+    margin-bottom: 35px;
+    width: 147px;
+    height: 40px;
+  }
+
+  .page-header__toggle {
+    margin-top: 45px;
+    margin-bottom: 41px;
+  }
+
+  .page-header__main-nav--closed .page-header__toggle {
+    margin-top: 44px;
+    margin-bottom: 42px;
+  }
+}
+
+@media (max-width: $mobile-tablet-width) {
+  .page-header__main-nav--opened {
+    background-color: $dark-blue-color;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-header {
     background-image: url("../img/bg-back-desktop@1x.jpg");
+    background-size: cover;
   }
 
   .page-header__main-nav {
