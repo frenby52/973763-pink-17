@@ -33,6 +33,16 @@
   background-color: transparent;
   border: none;
   cursor: pointer;
+
+  &:hover,
+  &:focus {
+    color: $pink-color;
+  }
+
+  &:active {
+    color: $white-color;
+    opacity: 0.3;
+  }
 }
 
 .page-header__main-nav--closed .page-header__toggle {
@@ -70,7 +80,6 @@
 
   .page-header__main-nav--closed .page-header__toggle {
     margin-top: 44px;
-    margin-bottom: 42px;
   }
 }
 

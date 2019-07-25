@@ -1,8 +1,6 @@
 .site-menu {
   @include list-style-reset;
-  //display: none;
   text-align: center;
-  //box-shadow: 0 1px 0 0 $black-color;
 }
 
 .site-menu__link {
@@ -13,6 +11,16 @@
   line-height: 32px;
   color: $white-color;
   text-transform: uppercase;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $pink-color;
+  }
+
+  &[href]:active {
+    color: $white-color;
+    opacity: 0.3;
+  }
 }
 
 @media (max-width: $mobile-tablet-width) {

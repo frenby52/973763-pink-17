@@ -21,6 +21,3 @@ menu_toggle.addEventListener('click', function() {
     site_menu.classList.add('site-menu--closed');
   }
 });
-
-
-

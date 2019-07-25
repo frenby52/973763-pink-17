@@ -1,0 +1,15 @@
+.page-main__features {
+  margin-top: 38px;
+}
+
+@media (min-width: $tablet-width) {
+  .page-main__features {
+    margin-top: 47px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .page-main__features {
+    margin-top: 67px;
+  }
+}
