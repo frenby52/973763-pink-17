@@ -54,13 +54,27 @@
     display: flex;
     justify-content: space-between;
     width: 620px;
-    outline: 2px solid cyan;
   }
 
   .site-menu__link {
+    position: relative;
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
+
+    &:not([href])::after {
+      content: "";
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: $white-color;
+    }
+  }
+
+  .site-menu__link.site-menu__link--main::after {
+    display: none;
   }
 }

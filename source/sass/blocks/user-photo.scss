@@ -1,7 +1,7 @@
 .user-photo__title {
   margin: 0 auto;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 45px;
+  padding-bottom: 49px;
   width: 245px;
   font-size: 14px;
   font-weight: 400;
@@ -16,10 +16,14 @@
   width: 280px;
 }
 
+.user-photo__post {
+  margin-bottom: 20px;
+}
+
 @media (min-width: $tablet-width) {
   .user-photo__title {
-    padding-top: 100px;
-    padding-bottom: 80px;
+    padding-top: 91px;
+    padding-bottom: 77px;
     width: 445px;
     font-size: 18px;
   }
@@ -38,6 +42,7 @@
 
   .user-photo__post--panorama {
     width: auto;
+    margin-bottom: 50px;
   }
 }
 
@@ -54,6 +59,6 @@
   }
 
   .user-photo__post {
-    margin-bottom: 54px;
+    margin-bottom: 53px;
   }
 }
