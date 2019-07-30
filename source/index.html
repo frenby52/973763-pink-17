@@ -7,13 +7,13 @@
         background-repeat: no-repeat;
         background-position:  50% 0;
         /* По умолчанию показывается мобильный макет */
-        background-image: url( "tmp_img/320i_no.png" );
+        background-image: url( "tmp_img/320i.jpg" );
       }
       /* Планшет */
       @media ( min-width: 660px ) {
         HTML {
           /* Планшетный макет */
-          background-image: url( "tmp_img/660i_no.png" );
+          background-image: url( "tmp_img/660i.jpg" );
         }
       }
       /* Десктоп */
@@ -33,7 +33,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--no-js">
       <div class="page-header__wrapper">
         <div class="page-header__main-nav page-header__main-nav--opened">
           <div class="page-header__logo-wrapper">
@@ -45,7 +45,7 @@
           </div>
           <nav class="main-nav">
             <!--            <div class="main-nav__wrapper">-->
-            <ul class="main-nav__list site-menu site-menu--opened">
+            <ul class="main-nav__list site-menu site-menu--opened site-menu--no-js">
               <li class="site-menu__item"><a class="site-menu__link site-menu__link--main">Главная</a></li>
               <li class="site-menu__item"><a class="site-menu__link" href="photo.html">Фотографии</a></li>
               <li class="site-menu__item"><a class="site-menu__link" href="form.html">Конкурс</a></li>

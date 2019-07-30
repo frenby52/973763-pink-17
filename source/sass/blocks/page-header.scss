@@ -8,6 +8,10 @@
   color: $white-color;
 }
 
+.page-header--no-js {
+  background-position: 50% 259px;
+}
+
 .page-header__wrapper {
   background-color: rgba(0, 0, 0, 0.3);
 }
@@ -21,14 +25,15 @@
 
 .page-header__logo-image {
   margin-top: 22px;
-  margin-bottom: 18px;
-  width: 72px;
+  //margin-bottom: 18px;
+  margin-bottom: 20px;
+  width: 75px;
   height: 22px;
 }
 
 .page-header__toggle {
   margin-top: 19px;
-  margin-bottom: 25px;
+  //margin-bottom: 25px;
   width: 24px;
   height: 23px;
   background-image: url("../img/icon-menu-cross.svg");
@@ -45,6 +50,10 @@
     color: $white-color;
     opacity: 0.3;
   }
+}
+
+.page-header--no-js .page-header__toggle {
+  display: none;
 }
 
 .page-header__main-nav--closed .page-header__toggle {
@@ -66,6 +75,10 @@
 @media (min-width: $tablet-width) {
   .page-header {
     background-image: url("../img/bg-back-tablet@1x.jpg");
+  }
+
+  .page-header--no-js {
+    background-position: 50% 255px;
   }
 
   .page-header__logo-image {
@@ -95,6 +108,10 @@
   .page-header {
     background-image: url("../img/bg-back-desktop@1x.jpg");
     background-size: cover;
+  }
+
+  .page-header--no-js {
+    background-position: 50% 0;
   }
 
   .page-header__main-nav {

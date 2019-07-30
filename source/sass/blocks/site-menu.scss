@@ -33,6 +33,10 @@
     background-color: $dark-blue-color;
   }
 
+  .site-menu--no-js {
+    position: static;
+  }
+
   .site-menu__item {
     border-top: 1px solid #000000;
     box-shadow: 0 1px 0 $black-color, inset 0 1px 0 transparentize($white-color, 0.85);
