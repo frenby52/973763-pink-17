@@ -1,12 +1,6 @@
 .site-menu {
   @include list-style-reset;
-  //display: none;
   text-align: center;
-  box-shadow: 0 1px 0 0 $black-color;
-}
-
-.site-menu__item {
-  box-shadow: 0 1px 0 $black-color, inset 0 1px 0 transparentize($white-color, 0.85);
 }
 
 .site-menu__link {
@@ -17,20 +11,74 @@
   line-height: 32px;
   color: $white-color;
   text-transform: uppercase;
+
+  &[href]:hover,
+  &[href]:focus {
+    color: $pink-color;
+  }
+
+  &[href]:active {
+    color: $white-color;
+    opacity: 0.3;
+  }
+}
+
+@media (max-width: $mobile-tablet-width) {
+  .site-menu--opened {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    background-color: $dark-blue-color;
+  }
+
+  .site-menu--no-js {
+    position: static;
+  }
+
+  .site-menu__item {
+    border-top: 1px solid #000000;
+    box-shadow: 0 1px 0 $black-color, inset 0 1px 0 transparentize($white-color, 0.85);
+  }
+
+  .site-menu__link {
+    display: block;
+    padding-top: 17px;
+    padding-bottom: 14px;
+  }
+
+  .site-menu--closed {
+    display: none;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .site-menu {
     display: flex;
     justify-content: space-between;
-    width: 640px;
-    outline: 2px solid cyan;
+    width: 620px;
   }
 
   .site-menu__link {
+    position: relative;
     font-size: 18px;
     font-weight: 400;
     line-height: 18px;
     text-transform: none;
+
+    &:not([href])::after {
+      content: "";
+      position: absolute;
+      bottom: -9px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background-color: $white-color;
+    }
+  }
+
+  .site-menu__link.site-menu__link--main::after {
+    display: none;
   }
 }

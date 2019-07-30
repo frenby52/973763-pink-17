@@ -1,7 +1,14 @@
 .copyright {
   display: flex;
   justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
+}
+
+.copyright__image {
+  margin-left: 15px;
+  widht: 27px;
+  height: 34px;
 }
 
 .copyright__text {
@@ -11,6 +18,7 @@
 
 @media (min-width: $tablet-width) {
   .copyright {
+    padding-top: 10px;
     width: 155px;
     justify-content: flex-end;
   }

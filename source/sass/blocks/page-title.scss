@@ -1,6 +1,6 @@
 .page-title {
-  padding-top: 35px;
-  padding-bottom: 87px;
+  padding-top: 27px;
+  padding-bottom: 85px;
   width: 230px;
   color: $white-color;
   font-size: 24px;
@@ -9,20 +9,34 @@
   text-align: center;
 }
 
+.page-title--form-page {
+  padding-bottom: 58px;
+}
+
 @media (min-width: $tablet-width) {
   .page-title {
-    padding-top: 81px;
-    padding-bottom: 150px;
+    padding-top: 70px;
+    padding-bottom: 141px;
     width: 350px;
     font-size: 50px;
-    line-height: normal;
+    line-height: 1.2;
+  }
+
+  .page-title--form-page {
+    width: 480px;
+    padding-bottom: 80px;
   }
 }
 
 @media (min-width: $desktop-width) {
   .page-title {
     font-size: 50px;
-    padding-top: 74px;
-    padding-bottom: 111px;
+    padding-top: 64px;
+    padding-bottom: 101px;
+  }
+
+  .page-title--form-page {
+    width: 750px;
+    padding-bottom: 100px;
   }
 }

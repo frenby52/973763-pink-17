@@ -1,5 +1,7 @@
 .feedback-slider {
   @include list-style-reset;
+  //временно
+  display: none;
 }
 
 .feedback-slider__author {

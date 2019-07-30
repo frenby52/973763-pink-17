@@ -33,19 +33,20 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-    <header class="page-header">
+    <header class="page-header page-header--no-js">
       <div class="page-header__wrapper">
-        <div class="page-header__main-nav">
+        <div class="page-header__main-nav page-header__main-nav--opened">
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo">
-              <img class="page-header__logo-image" src="" alt="Мобильное приложение Пинк" width="320" height="66">
+              <img class="page-header__logo-image" src="img/logo-pink-white-mobile.svg" alt="Мобильное приложение Пинк" width="72" height="22">
             </a>
             <button class="page-header__toggle" type="button" aria-label="Меню"></button>
+<!--            <a href="javascript:window.open('index.html', '','width=320,height=480')">Open!</a>-->
           </div>
           <nav class="main-nav">
             <!--            <div class="main-nav__wrapper">-->
-            <ul class="main-nav__list site-menu">
-              <li class="site-menu__item"><a class="site-menu__link">Главная</a></li>
+            <ul class="main-nav__list site-menu site-menu--opened site-menu--no-js">
+              <li class="site-menu__item"><a class="site-menu__link site-menu__link--main">Главная</a></li>
               <li class="site-menu__item"><a class="site-menu__link" href="photo.html">Фотографии</a></li>
               <li class="site-menu__item"><a class="site-menu__link" href="form.html">Конкурс</a></li>
               <li class="site-menu__item"><a class="site-menu__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a></li>
@@ -60,14 +61,14 @@
           <p class="download-app__title">Взгляните на жизнь иначе!</p>
           <a class="download-app__button button button--round" href="https://www.apple.com/ru/itunes/">Скачать приложение</a>
           <ul class="download-app__list">
-            <li class="download-app__item download-app__item--apple">
-              <a href="https://www.apple.com/ru/itunes/"><span class="visually-hidden">Скачать для apple</span></a>
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--apple" href="https://www.apple.com/ru/itunes/"><span class="visually-hidden">Скачать для apple</span></a>
             </li>
-            <li class="download-app__item download-app__item--android">
-              <a href="https://play.google.com/store/apps"><span class="visually-hidden">Скачать для Android</span></a>
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--android" href="https://play.google.com/store/apps"><span class="visually-hidden">Скачать для Android</span></a>
             </li>
-            <li class="download-app__item download-app__item--windows">
-              <a href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"><span class="visually-hidden">Скачать для Windows</span></a>
+            <li class="download-app__item">
+              <a class="download-app__link download-app__link--windows" href="https://www.microsoft.com/ru-ru/store/apps/windows-phone"><span class="visually-hidden">Скачать для Windows</span></a>
             </li>
           </ul>
           <p class="download-app__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -75,7 +76,7 @@
       </section>
     </header>
     <main class="page-main">
-      <section class="features">
+      <section class="page-main__features features">
         <h2 class="visually-hidden">Особенности приложения</h2>
         <div class="features__leads">
           <p class="features__lead">Устали от серости мегаполиса?</p>
@@ -89,11 +90,11 @@
             </li>
             <li class="features__item">
               <h3 class="features__title">Меняет мир вокруг</h3>
-              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект</p>
+              <p class="features__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить&nbsp;эффект</p>
             </li>
             <li class="features__item">
               <h3 class="features__title">Заводит новых друзей</h3>
-              <p class="features__text">Ставьте лайки, комментируте, делитесь фотографиями с друзьями и заводите новых</p>
+              <p class="features__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
             </li>
           </ul>
         </div>
@@ -101,8 +102,8 @@
           <div class="features__research">
             <div class="features__research-image"><span class="features__image-text">24</span></div>
             <div class="features__research-content">
-              <p class="features__research-title">Эффект на 24 часа!</p>
-              <p class="features__text">Британские ученые провели исследования и доказали, что положительный эффект от использования приложения длится целые сутки!</p>
+              <p class="features__research-title">Эффект на&nbsp;24&nbsp;часа!</p>
+              <p class="features__research-text">Британские ученые провели исследования и доказали, что&nbsp;положительный эффект от&nbsp;использования приложения длится целые сутки!</p>
               <a class="features__research-link" href="#">Узнать больше об исследовании</a>
             </div>
           </div>
@@ -178,8 +179,29 @@
         </div>
       </section>
     </main>
-    <footer>
-
+    <footer class="page-footer page-footer--index-page container">
+      <a class="page-footer__logo" href="index.html">
+        <img class="page-footer__logo-image" src="img/logo-pink-blue-mobile.svg
+" alt="Мобильное приложение Пинк" width="147" height="40">
+      </a>
+      <ul class="page-footer__list social">
+        <li class="social__item">
+          <a class="social__link social__link--twitter" href="#"><span class="visually-hidden">Мы в twitter</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--facebook" href="#"><span class="visually-hidden">Мы в facebook</span></a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="#"><span class="visually-hidden">Мы в youtube</span></a>
+        </li>
+      </ul>
+      <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
+        <span class="copyright__text">Разработано</span>
+        <img class="copyright__image" src="img/logo-htmlacademy.svg
+" alt="HTML Academy" width="27" height="34">
+        <!--        <svg></svg>-->
+      </a>
     </footer>
+    <script type="text/javascript" src="js/main-menu.js"></script>
   </body>
 </html>
