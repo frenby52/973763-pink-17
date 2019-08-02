@@ -8,8 +8,9 @@
 }
 
 .user-post__picture {
-  display: flex;
   margin: 0;
+  //padding: 0;
+  line-height: 0;
   outline: 1px solid red;
 }
 
@@ -19,13 +20,19 @@
 }
 
 .user-post__picture--panorama {
-  width: 100%;
-  height: auto;
+  margin: 0 auto;
+  width: auto;
+  max-width: 320px;
 }
 
 .user-post__image {
   width: 100%;
   height: auto;
+}
+
+.user-post__image--panorama {
+  width: 320px;
+  height: 137px;
 }
 
 .user-post__wrapper-panorama {
@@ -98,6 +105,15 @@
     height: 300px;
   }
 
+  .user-post__picture--panorama {
+    max-width: 700px;
+  }
+
+  .user-post__image--panorama {
+    width: 700px;
+    height: 509px;
+  }
+
   .user-post__wrapper-panorama {
     padding-left: 20px;
     padding-right: 20px;
@@ -163,6 +179,15 @@
   .user-post__picture:not(.user-post__picture--panorama) {
     width: 300px;
     height: 400px;
+  }
+
+  .user-post__picture--panorama {
+    max-width: 1200px;
+  }
+
+  .user-post__image--panorama {
+    width: 1200px;
+    height: 506px;
   }
 
   .user-post__wrapper-panorama {

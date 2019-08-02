@@ -10,12 +10,31 @@
 }
 
 .page-footer__logo {
+  display: block;
   margin-bottom: 34px;
-}
-
-.page-footer__logo-image {
   width: 147px;
   height: 40px;
+
+  &[href]:hover,
+  &[href]:focus {
+    path {
+      fill: $pink-color;
+    }
+  }
+
+  &[href]:active {
+    path {
+      opacity: 0.3;
+    }
+  }
+}
+
+.page-footer__logo-image--mobile {
+  display: block;
+}
+
+.page-footer__logo-image--desktop {
+  display: none;
 }
 
 .page-footer__list {
@@ -50,5 +69,13 @@
 @media (min-width: $desktop-width) {
   .page-footer {
     width: 940px;
+  }
+
+  .page-footer__logo-image--mobile {
+    display: none;
+  }
+
+  .page-footer__logo-image--desktop {
+    display: block;
   }
 }
