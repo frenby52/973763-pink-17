@@ -32,23 +32,24 @@
   display: block;
   margin-top: 22px;
   //margin-bottom: 18px;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   width: 75px;
   height: 22px;
+  color: $white-color;
 
   &[href]:hover,
   &[href]:focus {
-    path {
-      fill: $pink-color;
-    }
+    color: $pink-color;
   }
 
   &[href]:active {
-    //opacity: 0.3;
-    path {
-      fill: $white-color;
-    }
+    color: $white-color;
+    opacity: 0.3;
   }
+}
+
+.page-header__logo-image {
+  fill: currentColor;
 }
 
 .page-header__logo-image--mobile {
@@ -61,14 +62,15 @@
 }
 
 .page-header__toggle {
-  margin-top: 19px;
-  //margin-bottom: 25px;
+  margin-top: 20px;
+  margin-right: 4px;
   width: 24px;
-  height: 23px;
-  background-image: url("../img/icon-menu-cross.svg");
+  height: 24px;
+  //background-image: url("../img/icon-menu-cross.svg");
   background-color: transparent;
   border: none;
   cursor: pointer;
+  color: $white-color;
 
   &:hover,
   &:focus {
@@ -76,7 +78,7 @@
   }
 
   &:active {
-    color: $white-color;
+    color: $pink-color;
     opacity: 0.3;
   }
 }
@@ -86,11 +88,31 @@
 }
 
 .page-header__main-nav--closed .page-header__toggle {
-  margin-top: 21px;
-  margin-bottom: 23px;
+  //margin-top: 21px;
+  //margin-bottom: 23px;
   width: 50px;
   height: 24px;
-  background-image: url("../img/icon-menu-burger.svg");
+  //background-image: url("../img/icon-menu-burger.svg");
+}
+
+.page-header__toggle-icon {
+  fill: currentColor;
+}
+
+.page-header__main-nav--closed .page-header__toggle-icon--cross {
+  display: none;
+}
+
+.page-header__main-nav--closed .page-header__toggle-icon--burger {
+  display: block;
+}
+
+.page-header__main-nav--opened .page-header__toggle-icon--cross {
+  display: block;
+}
+
+.page-header__main-nav--opened .page-header__toggle-icon--burger {
+  display: none;
 }
 
 .page-header__title {
@@ -99,6 +121,10 @@
 
 .page-header__download-app {
   margin: 0 auto;
+}
+
+.page-header--no-js .page-header__download-app {
+  margin-top: 4px;
 }
 
 @media (min-width: $tablet-width) {
@@ -138,6 +164,10 @@
 
   .page-header__main-nav--closed .page-header__toggle {
     margin-top: 44px;
+  }
+
+  .page-header__download-app {
+    margin-top: 0;
   }
 }
 

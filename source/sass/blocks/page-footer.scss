@@ -14,19 +14,21 @@
   margin-bottom: 34px;
   width: 147px;
   height: 40px;
+  color: $dark-blue-color;
 
   &[href]:hover,
   &[href]:focus {
-    path {
-      fill: $pink-color;
-    }
+    color: $pink-color;
   }
 
   &[href]:active {
-    path {
-      opacity: 0.3;
-    }
+    color: $dark-blue-color;
+    opacity: 0.3;
   }
+}
+
+.page-footer__logo-image {
+  fill: currentColor;
 }
 
 .page-footer__logo-image--mobile {

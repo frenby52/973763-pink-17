@@ -3,12 +3,24 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  color: $dark-blue-color;
+
+  &:hover .copyright__image,
+  &:focus .copyright__image {
+    fill: $pink-color;
+  }
+
+  &:active .copyright__image {
+    fill: $dark-blue-color;
+    opacity: 0.3;
+  }
 }
 
 .copyright__image {
   margin-left: 15px;
   widht: 27px;
   height: 34px;
+  fill: currentColor;
 }
 
 .copyright__text {

@@ -24,7 +24,8 @@
   }
 
   &:active {
-    border-color: transparentize($dark-blue-color, 0.9);
+    opacity: 0.3;
+    border-color: transparentize($dark-blue-color, 0.6);
   }
 }
 
