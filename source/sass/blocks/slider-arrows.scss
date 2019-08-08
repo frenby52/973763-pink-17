@@ -1,0 +1,40 @@
+.slider-arrows {
+  display: none;
+}
+
+.slider-arrows__arrow  {
+  position: absolute;
+  top: 215px;
+  width: 22px;
+  height: 42px;
+  background-color: transparent;
+  border: none;
+  opacity: 0.3;
+  cursor: pointer;
+  outline: none;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
+
+  &--left {
+    left: 1%;
+    background-image: url("../img/icon-review-arrow-left.svg");
+  }
+
+  &--right {
+    right: 1%;
+    background-image: url("../img/icon-review-arrow-right.svg");
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .slider-arrows {
+    display: block;
+  }
+}

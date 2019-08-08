@@ -1,11 +1,43 @@
 .slider-controls {
-  //временно
-  display: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .slider-controls__button {
+  padding: 0;
   width: 6px;
   height: 6px;
+  border: none;
   border-radius: 50%;
+  background-color: $dark-blue-color;
   cursor: pointer;
+  opacity: 0.3;
+
+  &:not(.slider-controls__button--active):hover,
+  &:not(.slider-controls__button--active):focus {
+    opacity: 0.6;
+  }
+
+  &:not(.slider-controls__button--active):active {
+    opacity: 0.1;
+  }
+
+  &:not(:first-child) {
+    margin-left: 18px;
+  }
+}
+
+.slider-controls__button--active {
+  width: 12px;
+  height: 12px;
+  background-color: $white-color;
+  border: 3px solid $dark-blue-color;
+  opacity: 1;
+}
+
+@media (min-width: $desktop-width) {
+  .slider-controls {
+    display: none;
+  }
 }

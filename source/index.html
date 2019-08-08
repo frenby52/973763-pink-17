@@ -228,75 +228,149 @@
           </div>
         </div>
       </section>
-      <section class="feedback">
+      <section class="feedback container">
         <h2 class="visually-hidden">Отзывы о приложении</h2>
         <ul class="feedback__list feedback-slider">
           <li class="feedback-slider__item">
             <p class="feedback-slider__author">Николай Петров</p>
+            <p class="feedback-slider__profession">25 лет, водитель трамвая</p>
             <p class="feedback-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
           </li>
 <!--          <li class="feedback-slider__item">-->
 <!--            <p class="feedback-slider__author">Николай Петров</p>-->
+<!--            <p class="feedback-slider__profession">25 лет, водитель трамвая</p>-->
 <!--            <p class="feedback-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>-->
 <!--          </li>-->
 <!--          <li class="feedback-slider__item">-->
 <!--            <p class="feedback-slider__author">Николай Петров</p>-->
+<!--            <p class="feedback-slider__profession">25 лет, водитель трамвая</p>-->
 <!--            <p class="feedback-slider__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>-->
 <!--          </li>-->
         </ul>
         <div class="feedback__controls slider-controls">
-          <button class="slider-controls__button" type="button">1</button>
-          <button class="slider-controls__button" type="button">2</button>
-          <button class="slider-controls__button" type="button">3</button>
+          <button class="slider-controls__button slider-controls__button--active" type="button"><span class="visually-hidden">1й слайд</span></button>
+          <button class="slider-controls__button" type="button"><span class="visually-hidden">2й слайд</span></button>
+          <button class="slider-controls__button" type="button"><span class="visually-hidden">3й слайд</span></button>
+        </div>
+        <div class="feedback__controls-arrows slider-arrows">
+          <button type="button" class="slider-arrows__arrow slider-arrows__arrow--left"><span class="visually-hidden">Влево</span></button>
+          <button type="button" class="slider-arrows__arrow slider-arrows__arrow--right"><span class="visually-hidden">Вправо</span></button>
         </div>
       </section>
       <section class="tariffs">
         <h2 class="visually-hidden">Тарифы на приложение</h2>
-        <table class="tariffs__table tariffs-table">
-          <thead>
+        <div class="tariffs__wrapper">
+          <table class="tariffs__table tariffs-table">
+            <thead>
             <tr>
               <th class="tariffs-table__header"><span class="visually-hidden">Название тарифов</span></th>
               <th class="tariffs-table__header">
+                <span class="tariffs-table__name">База</span>
+                <span class="tariffs-table__price">1,99 USD</span>
+              </th>
+              <th class="tariffs-table__header tariffs-table__header--hit" data-hit-text="Хит" >
                 <span class="tariffs-table__name">Стандарт</span>
                 <span class="tariffs-table__price">3,99 USD</span>
               </th>
               <th class="tariffs-table__header">
-                <span class="tariffs-table__name">Стандарт</span>
-                <span class="tariffs-table__price">3,99 USD</span>
-              </th>
-              <th class="tariffs-table__header">
-                <span class="tariffs-table__name">Стандарт</span>
-                <span class="tariffs-table__price">3,99 USD</span>
+                <span class="tariffs-table__name">Анлим</span>
+                <span class="tariffs-table__price">9,99 USD</span>
               </th>
             </tr>
-          </thead>
-          <tbody>
+            </thead>
+            <tbody>
             <tr>
               <td class="tariffs-table__cell">Розовый фильтр</td>
-              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
-              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
-              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
+              <td class="tariffs-table__cell">
+                <div class="tariffs-table__feature" data-feature-name="Розовый фильтр">
+                  <span class="tariffs-table__feature-value tariffs-table__feature-value--true">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
+              </td>
+              <td class="tariffs-table__cell">
+                <div class="tariffs-table__feature" data-feature-name="Розовый фильтр">
+                  <span class="tariffs-table__feature-value tariffs-table__feature-value--true">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
+              </td>
+              <td class="tariffs-table__cell">
+                <div class="tariffs-table__feature" data-feature-name="Розовый фильтр">
+                  <span class="tariffs-table__feature-value tariffs-table__feature-value--true">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td class="tariffs-table__cell">Смайлики</td>
-              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
-              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
-              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
+              <td class="tariffs-table__cell">
+                <div class="tariffs-table__feature" data-feature-name="Смайлики">
+                  <span class="tariffs-table__feature-value tariffs-table__feature-value--false">
+                    <span class="visually-hidden">Нет</span>
+                  </span>
+                </div>
+              </td>
+              <td class="tariffs-table__cell">
+                <div class="tariffs-table__feature" data-feature-name="Смайлики">
+                  <span class="tariffs-table__feature-value tariffs-table__feature-value--true">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
+              </td>
+              <td class="tariffs-table__cell">
+                <div class="tariffs-table__feature" data-feature-name="Смайлики">
+                  <span class="tariffs-table__feature-value tariffs-table__feature-value--true">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
+              </td>
             </tr>
             <tr>
               <td class="tariffs-table__cell">Комментарии</td>
-              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
-              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
-              <td class="tariffs-table__cell"><span class="tariffs-table__option">Да</span></td>
+              <td class="tariffs-table__cell">
+                <div class="tariffs-table__feature" data-feature-name="Комментарии">
+                  <span class="tariffs-table__feature-value tariffs-table__feature-value--false">
+                    <span class="visually-hidden">Нет</span>
+                  </span>
+                </div>
+              </td>
+              <td class="tariffs-table__cell">
+                <div class="tariffs-table__feature" data-feature-name="Комментарии">
+                  <span class="tariffs-table__feature-value tariffs-table__feature-value--false">
+                    <span class="visually-hidden">Нет</span>
+                  </span>
+                </div>
+              </td>
+              <td class="tariffs-table__cell">
+                <div class="tariffs-table__feature" data-feature-name="Комментарии">
+                  <span class="tariffs-table__feature-value tariffs-table__feature-value--true">
+                    <span class="visually-hidden">Да</span>
+                  </span>
+                </div>
+              </td>
             </tr>
-          </tbody>
-        </table>
-        <div class="tariffs__controls slider-controls">
-          <button class="slider-controls__button" type="button">1</button>
-          <button class="slider-controls__button" type="button">2</button>
-          <button class="slider-controls__button" type="button">3</button>
+            </tbody>
+          </table>
+          <div class="tariffs__controls slider-controls">
+            <button class="slider-controls__button" type="button"><span class="visually-hidden">1й слайд</span></button>
+            <button class="slider-controls__button slider-controls__button--active" type="button"><span class="visually-hidden">2й слайд</span></button>
+            <button class="slider-controls__button" type="button"><span class="visually-hidden">3й слайд</span></button>
+          </div>
         </div>
       </section>
+      <section class="contacts container">
+        <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
+        <ul class="contacts__list">
+          <li class="contacts__item">Звоните: <a class="contants__link" href="tel:+78125556666">+7 (812) 555-66-66</a></li>
+          <li class="contacts__item">Пишите: <a class="contants__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></li>
+          <li class="contacts__item">Приезжайте в гости: <a class="contants__link">ул. Большая Конюшенная, 19/8</a></li>
+        </ul>
+      </section>
+      <div class="contacts__map">
+        <iframe src="https://yandex.ru/map-widget/v1/-/CGRkqZjA" allowfullscreen="true"></iframe>
+      </div>
     </main>
     <footer class="page-footer container">
       <a class="page-footer__logo">
