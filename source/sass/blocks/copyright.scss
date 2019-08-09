@@ -37,6 +37,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .copyright {
+    padding-top: 0;
+  }
+
   .copyright__text {
     font-size: 18px;
   }
