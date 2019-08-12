@@ -53,3 +53,11 @@
     margin: 0;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding-left: 13px;
+    width: 181px;
+  }
+
+}

@@ -11,6 +11,7 @@
   margin: 0;
   //padding: 0;
   line-height: 0;
+  font-size: 0;
   outline: 1px solid red;
 }
 
@@ -20,9 +21,28 @@
 }
 
 .user-post__picture--panorama {
+  position: relative;
   margin: 0 auto;
   width: auto;
   max-width: 320px;
+
+  &::before {
+    position: absolute;
+    padding-top: 6px;
+    top: 0;
+    right: 6%;
+    content: 'панорама дня';
+    width: 140px;
+    height: 36px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    text-transform: uppercase;
+    color: $white-color;
+    background-color: $pink-color;
+    text-align: center;
+    box-sizing: border-box;
+  }
 }
 
 .user-post__image {
@@ -107,6 +127,11 @@
 
   .user-post__picture--panorama {
     max-width: 700px;
+
+    &::before {
+      top: 11%;
+      right: 3%;
+    }
   }
 
   .user-post__image--panorama {
@@ -183,6 +208,11 @@
 
   .user-post__picture--panorama {
     max-width: 1200px;
+
+    &::before {
+      top: 10%;
+      right: 11%;
+    }
   }
 
   .user-post__image--panorama {
