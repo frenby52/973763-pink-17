@@ -1,0 +1,32 @@
+.contest-form__header {
+  margin: 0 auto;
+  padding-top: 45px;
+  padding-bottom: 40px;
+  width: 280px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.contest-form__header-hidden {
+  display: none;
+}
+
+@media (min-width: $tablet-width) {
+  .contest-form__header {
+    padding-top: 93px;
+    padding-bottom: 70px;
+    width: 490px;
+    font-size: 18px;
+  }
+
+  .contest-form__header-hidden {
+    display: inline;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .contest-form__header {
+    width: 760px;
+    padding-bottom: 55px;
+  }
+}
