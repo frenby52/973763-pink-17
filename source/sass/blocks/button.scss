@@ -9,9 +9,17 @@
   text-align: center;
   background-color: transparent;
   cursor: pointer;
-}
 
-.button--round {
-  border: 3px solid;
-  border-radius: 30px;
+  &--round {
+    border: 3px solid;
+    border-radius: 30px;
+  }
+
+  &--square {
+    padding-top: 15px;
+    padding-bottom: 14px;
+    border-radius: 2px;
+    line-height: 30px;
+    text-transform: uppercase;
+  }
 }

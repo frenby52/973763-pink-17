@@ -93,8 +93,6 @@
   -webkit-appearance: none;
   width: 240px;
   height: 18px;
-  //height: 14px;
-  //margin: 0px auto 30px;
   background-color: transparent;
   outline: none;
   border: none;
@@ -159,7 +157,7 @@
 
   &::-ms-track {
     width: 240px;
-    height: 0px;
+    height: 0;
     background-color: $dark-blue-color;
     color: transparent;
     border-color: transparent;
@@ -277,7 +275,7 @@
 
   .photo-upload__range-wrapper {
     display: block;
-    color: $pink-color
+    color: $pink-color;
   }
 
   .photo-upload__filter-range {

@@ -176,11 +176,11 @@
       <h1 class="page-header__title page-title page-title--form-page">Конкурс на самое безбашенное путешествие с Пинк</h1>
     </header>
     <main class="page-main">
-      <section class="contest-form container">
+      <section class="page-main__contest-form contest-form">
         <p class="contest-form__header">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту! <span class="contest-form__header-hidden">Пожалуйста, заполните форму ниже:</span></p>
         <form class="contest-form__form" action="https://echo.htmlacademy.ru" method="get">
-          <div class="contest-form__username-wrapper">
-            <fieldset class="contest-form__username">
+          <div class="contest-form__username-wrapper container">
+            <fieldset class="contest-form__fieldset contest-form__fieldset--username">
               <ul class="contest-form__list">
                 <li class="contest-form__username-item">
                   <label class="contest-form__label" for="surname">Фамилия:</label>
@@ -198,39 +198,39 @@
             </fieldset>
           </div>
           <div class="contest-form__user-achieves-wrapper">
-            <fieldset class="contest-form__achieves">
+            <fieldset class="contest-form__fieldset contest-form__fieldset--achieves">
               <legend class="contest-form__legend">Ваши безбашенные достижения в путешествии</legend>
-              <ul class="contest-form__list">
+              <ul class="contest-form__list contest-form__list--achieves">
                 <li class="contest-form__achieves-item">
                   <input class="contest-form__checkbox visually-hidden" type="checkbox" id="selfie" name="achieves" value="selfie" checked>
-                  <label class="contest-form__label-checkbox" for="selfie">Сделал селфи с акулой</label>
+                  <label class="contest-form__label contest-form__label--checkbox" for="selfie">Сделал селфи с акулой</label>
                 </li>
                 <li class="contest-form__achieves-item">
                   <input class="contest-form__checkbox visually-hidden" type="checkbox" id="burned" name="achieves" value="burned" checked>
-                  <label class="contest-form__label-checkbox" for="burned">Обгорел на пляже</label>
+                  <label class="contest-form__label contest-form__label--checkbox" for="burned">Обгорел на пляже</label>
                 </li>
                 <li class="contest-form__achieves-item">
                   <input class="contest-form__checkbox visually-hidden" type="checkbox" id="chuck" name="achieves" value="chuck">
-                  <label class="contest-form__label-checkbox" for="chuck">Видел Чака Норриса</label>
+                  <label class="contest-form__label contest-form__label--checkbox" for="chuck">Видел Чака Норриса</label>
                 </li>
                 <li class="contest-form__achieves-item">
                   <input class="contest-form__checkbox visually-hidden" type="checkbox" id="souvenir" name="achieves" value="souvenir">
-                  <label class="contest-form__label-checkbox" for="souvenir">Накупил сувениров</label>
+                  <label class="contest-form__label contest-form__label--checkbox" for="souvenir">Накупил сувениров</label>
                 </li>
                 <li class="contest-form__achieves-item">
                   <input class="contest-form__checkbox visually-hidden" type="checkbox" id="tower" name="achieves" value="tower" checked>
-                  <label class="contest-form__label-checkbox" for="tower">Удержал башню</label>
+                  <label class="contest-form__label contest-form__label--checkbox" for="tower">Удержал башню</label>
                 </li>
                 <li class="contest-form__achieves-item">
                   <input class="contest-form__checkbox visually-hidden" type="checkbox" id="hotel" name="achieves" value="hotel">
-                  <label class="contest-form__label-checkbox" for="hotel">Разгромил отель</label>
+                  <label class="contest-form__label contest-form__label--checkbox" for="hotel">Разгромил отель</label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="contest-form__contacts-wrapper">
-            <fieldset class="contest-form__contacts">
-              <legend class="contest-form__legend">Контактная информация</legend>
+          <div class="contest-form__contacts-wrapper container">
+            <fieldset class="contest-form__fieldset">
+              <legend class="contest-form__legend contest-form__legend--contacts">Контактная информация</legend>
               <ul class="contest-form__list">
                 <li class="contest-form__contacts-item">
                   <label class="contest-form__label" for="tel">номер телефона</label>
@@ -243,31 +243,31 @@
             </fieldset>
           </div>
           <div class="contest-form__user-app-wrapper">
-            <fieldset class="contest-form__user-app">
+            <fieldset class="contest-form__fieldset contest-form__fieldset--user-app">
               <legend class="contest-form__legend">С каким приложением путешествовали?</legend>
-              <ul class="contest-form__list">
+              <ul class="contest-form__list contest-form__list--user-app">
                 <li class="contest-form__user-app-item">
                   <input class="contest-form__radio visually-hidden" type="radio" name="user-app" id="ios" value="Pink ios" checked>
-                  <label class="contest-form__label-radio" for="ios">Pink для iOS</label>
+                  <label class="contest-form__label contest-form__label--radio" for="ios">Pink для iOS</label>
                 </li>
                 <li class="contest-form__user-app-item">
                   <input class="contest-form__radio visually-hidden" type="radio" name="user-app" id="android" value="Pink android">
-                  <label class="contest-form__label-radio" for="android">Pink на Android</label>
+                  <label class="contest-form__label contest-form__label--radio" for="android">Pink на Android</label>
                 </li>
                 <li class="contest-form__user-app-item">
                   <input class="contest-form__radio visually-hidden" type="radio" name="user-app" id="windows" value="Pink Windows">
-                  <label class="contest-form__label-radio" for="windows">Windows Phone</label>
+                  <label class="contest-form__label contest-form__label--radio" for="windows">Windows Phone</label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <div class="contest-form__message-wrapper">
-            <fieldset class="contest-form__message">
+          <div class="contest-form__message-wrapper container">
+            <fieldset class="contest-form__fieldset">
               <legend class="contest-form__legend">Опишите свои эмоции</legend>
-              <textarea class="contest-form__textarea" name="message" id="message" placeholder="Можно прям в красках, не стесняясь в выражениях" rows="5"></textarea>
+              <textarea class="contest-form__textarea" name="message" id="message" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
             </fieldset>
           </div>
-          <div class="contest-form__submit-wrapper">
+          <div class="contest-form__submit-wrapper container">
             <button class="contest-form__button button button--square" type="submit">Отправить
               форму</button>
             <p class="contest-form__note"><span class="contest-form__star">*</span> — обязательные<span class="contest-form__note-hidden"> для заполнения</span> поля</p>
