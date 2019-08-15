@@ -74,6 +74,10 @@
   .page-footer {
     width: 940px;
     padding-top: 97px;
+
+    &--form-page {
+      padding-top: 16px;
+    }
   }
 
   .page-footer__logo-image--mobile {
