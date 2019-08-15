@@ -209,12 +209,11 @@
 
   .features__list {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     padding-top: 0;
     width: 940px;
     background-image: none;
-    //background-repeat: no-repeat;
-    //background-position: left 0% bottom -65px;
   }
 
   .features__item {

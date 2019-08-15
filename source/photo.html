@@ -1,32 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <!-- Pixel Glass -->
-    <style>
-      HTML {
-        background-repeat: no-repeat;
-        background-position:  50% 0;
-        /* По умолчанию показывается мобильный макет */
-        background-image: url( "tmp_img/320p.png" );
-      }
-      /* Планшет */
-      @media ( min-width: 660px ) {
-        HTML {
-          /* Планшетный макет */
-          background-image: url( "tmp_img/660p.png" );
-        }
-      }
-      /* Десктоп */
-      @media ( min-width: 960px ) {
-        HTML {
-          /* Десктопный макет */
-          background-image: url( "tmp_img/960p.png" );
-        }
-      }
-    </style>
-    <link href="../node_modules/pixel-glass/styles.css" rel="stylesheet">
-    <script src="../node_modules/pixel-glass/script.js"></script>
-    <!-- // Pixel Glass -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>HTML Academy: Пинк</title>
@@ -155,34 +129,32 @@
         <div class="page-header__main-nav page-header__main-nav--opened">
           <div class="page-header__logo-wrapper">
             <a class="page-header__logo" href="index.html">
-              <svg class="page-header__logo-image page-header__logo-image--mobile" width="74px" height="23px">
+              <svg class="page-header__logo-image page-header__logo-image--mobile" width="74" height="23">
                 <use xlink:href="#logo-pink-white-mobile"></use>
               </svg>
-              <svg class="page-header__logo-image page-header__logo-image--tablet" width="146px" height="40px">
+              <svg class="page-header__logo-image page-header__logo-image--tablet" width="146" height="40">
                 <use xlink:href="#logo-pink-white-tablet"></use>
               </svg>
-              <svg class="page-header__logo-image page-header__logo-image--desktop" width="146px" height="40px">
+              <svg class="page-header__logo-image page-header__logo-image--desktop" width="146" height="40">
                 <use xlink:href="#logo-pink-white-desktop"></use>
               </svg>
             </a>
             <button class="page-header__toggle" type="button" aria-label="Меню">
-              <svg class="page-header__toggle-icon page-header__toggle-icon--cross" width="24px" height="24px">
+              <svg class="page-header__toggle-icon page-header__toggle-icon--cross" width="24" height="24">
                 <use xlink:href="#icon-menu-cross"></use>
               </svg>
-              <svg class="page-header__toggle-icon page-header__toggle-icon--burger" width="50px" height="24px">
+              <svg class="page-header__toggle-icon page-header__toggle-icon--burger" width="50" height="24">
                 <use xlink:href="#icon-menu-burger"></use>
               </svg>
             </button>
           </div>
           <nav class="main-nav">
-            <!--            <div class="main-nav__wrapper">-->
             <ul class="main-nav__list site-menu site-menu--opened site-menu--no-js">
               <li class="site-menu__item"><a class="site-menu__link" href="index.html">Главная</a></li>
               <li class="site-menu__item"><a class="site-menu__link">Фотографии</a></li>
               <li class="site-menu__item"><a class="site-menu__link" href="form.html">Конкурс</a></li>
               <li class="site-menu__item"><a class="site-menu__link" href="https://htmlacademy.ru" target="_blank">HTML Academy</a></li>
             </ul>
-            <!--            </div>-->
           </nav>
         </div>
       </div>
@@ -431,10 +403,10 @@
     </main>
     <footer class="page-footer container">
       <a class="page-footer__logo" href="index.html">
-        <svg class="page-footer__logo-image page-footer__logo-image--mobile" width="146px" height="40px">
+        <svg class="page-footer__logo-image page-footer__logo-image--mobile" width="146" height="40">
           <use xlink:href="#logo-pink-blue-mobile"></use>
         </svg>
-        <svg class="page-footer__logo-image page-footer__logo-image--desktop"  width="146px" height="40px">
+        <svg class="page-footer__logo-image page-footer__logo-image--desktop"  width="146" height="40">
           <use xlink:href="#logo-pink-blue-desktop"></use>
         </svg>
       </a>
@@ -451,7 +423,7 @@
       </ul>
       <a class="page-footer__copyright copyright" href="https://htmlacademy.ru/intensive/adaptive" target="_blank">
         <span class="copyright__text">Разработано</span>
-        <svg class="copyright__image" width="27px" height="34px">
+        <svg class="copyright__image" width="27" height="34">
           <use xlink:href="#logo-htmlacademy"></use>
         </svg>
       </a>

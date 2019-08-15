@@ -1,6 +1,4 @@
 .tariffs-table {
-  //временно
-  //display: none;
   width: 840px;
   background-color: $lightgray-color-bg;
   border-spacing: 0;
@@ -19,36 +17,38 @@
   border-right: 2px solid $gray-color-border;
   text-align: center;
   overflow: hidden;
-}
 
-.tariffs-table__header--hit {
-  position: relative;
-  background-image: url("../img/bg-hit.svg");
-  background-position: 0 0;
-  background-repeat: no-repeat;
-}
+  &--hit {
+    position: relative;
+    background-image: url("../img/bg-hit.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 
-.tariffs-table__header--hit::before {
-  position: absolute;
-  content: attr(data-hit-text);
-  //width: 74px;
-  //height: 73px;
-  background-color: $pink-color;
-  color: $white-color;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 21.21px;
-  text-transform: uppercase;
-  transform: rotate(-45deg);
-  left: 10px;
-  top: 12px;
-}
+  &--hit::before {
+    position: absolute;
+    content: attr(data-hit-text);
+    background-color: $pink-color;
+    color: $white-color;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 21.21px;
+    text-transform: uppercase;
+    transform: rotate(-45deg);
+    left: 10px;
+    top: 12px;
+  }
 
-.tariffs-table__header:first-child {
-  display: none;
-  border-right: 0;
-  border-bottom: 2px solid $gray-color-border;
-  background-color: transparent;
+  &:first-child {
+    display: none;
+    border-right: 0;
+    border-bottom: 2px solid $gray-color-border;
+    background-color: transparent;
+  }
+
+  &:last-child {
+    border-right-color: $dark-blue-color;
+  }
 }
 
 .tariffs-table__name {
@@ -61,10 +61,6 @@
   display: block;
   font-size: 24px;
   font-weight: 300;
-}
-
-.tariffs-table__header:last-child {
-  border-right-color: $dark-blue-color;
 }
 
 .tariffs-table__cell {
@@ -82,12 +78,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
 
-.tariffs-table__feature::before {
-  content: attr(data-feature-name);
-  line-height: 30px;
-  text-transform: uppercase;
+  &::before {
+    content: attr(data-feature-name);
+    line-height: 30px;
+    text-transform: uppercase;
+  }
 }
 
 .tariffs-table__feature-value {
@@ -95,18 +91,18 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
-}
 
-.tariffs-table__feature-value--true {
-  width: 31px;
-  height: 21px;
-  background-image: url("../img/icon-yes.svg");
-}
+  &--true {
+    width: 31px;
+    height: 21px;
+    background-image: url("../img/icon-yes.svg");
+  }
 
-.tariffs-table__feature-value--false {
-  width: 27px;
-  height: 26px;
-  background-image: url("../img/icon-no.svg");
+  &--false {
+    width: 27px;
+    height: 26px;
+    background-image: url("../img/icon-no.svg");
+  }
 }
 
 .tariffs-table__cell:first-child {
@@ -122,19 +118,19 @@
   .tariffs-table__header {
     padding-top: 12px;
     padding-bottom: 7px;
-  }
 
-  .tariffs-table__header--hit {
-    background-image: url("../img/bg-hit-tablet.svg");
-  }
+    &--hit {
+      background-image: url("../img/bg-hit-tablet.svg");
+    }
 
-  .tariffs-table__header--hit::before {
-    left: 7px;
-    top: 6px;
-  }
+    &--hit::before {
+      left: 7px;
+      top: 6px;
+    }
 
-  .tariffs-table__header:first-child {
-    display: table-cell;
+    &:first-child {
+      display: table-cell;
+    }
   }
 
   .tariffs-table__name {
@@ -151,19 +147,19 @@
     width: 25%;
     padding-top: 8px;
     padding-bottom: 7px;
-  }
 
-  .tariffs-table__cell:first-child {
-    display: table-cell;
-    padding-left: 17px;
+    &:first-child {
+      display: table-cell;
+      padding-left: 17px;
+    }
   }
 
   .tariffs-table__feature {
     justify-content: center;
-  }
 
-  .tariffs-table__feature::before {
-    content: "";
+    &::before {
+      content: "";
+    }
   }
 }
 
@@ -175,15 +171,15 @@
   .tariffs-table__header {
     padding-top: 17px;
     padding-bottom: 21px;
-  }
 
-  .tariffs-table__header--hit {
-    background-image: url("../img/bg-hit.svg");
-  }
+    &--hit {
+      background-image: url("../img/bg-hit.svg");
+    }
 
-  .tariffs-table__header--hit::before {
-    left: 12px;
-    top: 13px;
+    &--hit::before {
+      left: 12px;
+      top: 13px;
+    }
   }
 
   .tariffs-table__name {

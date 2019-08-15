@@ -4,10 +4,10 @@
   flex-direction: column;
   align-items: center;
   width: 280px;
-}
 
-.page-footer--index-page {
-  display: none;
+  &--index-page {
+    display: none;
+  }
 }
 
 .page-footer__logo {
@@ -30,14 +30,14 @@
 
 .page-footer__logo-image {
   fill: currentColor;
-}
 
-.page-footer__logo-image--mobile {
-  display: block;
-}
+  &--mobile {
+    display: block;
+  }
 
-.page-footer__logo-image--desktop {
-  display: none;
+  &--desktop {
+    display: none;
+  }
 }
 
 .page-footer__list {
@@ -54,10 +54,10 @@
     flex-direction: row;
     justify-content: space-between;
     width: 620px;
-  }
 
-  .page-footer--index-page {
-    display: flex;
+    &--index-page {
+      display: flex;
+    }
   }
 
   .page-footer__logo {
