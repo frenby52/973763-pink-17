@@ -63,6 +63,11 @@
   &--active {
     opacity: 1;
     color: $pink-color;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+    }
   }
 }
 
