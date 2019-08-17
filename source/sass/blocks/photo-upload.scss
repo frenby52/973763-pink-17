@@ -94,8 +94,9 @@
 }
 
 //polzynok
+/* stylelint-disable */
 .photo-upload__filter-range {
-  //-webkit-appearance: none;
+  -webkit-appearance: none;
   width: 240px;
   height: 18px;
   background-color: transparent;
@@ -103,7 +104,7 @@
   border: none;
 
   &::-webkit-slider-thumb {
-    //-webkit-appearance: none;
+    -webkit-appearance: none;
     box-sizing: content-box;
     width: 14px;
     height: 14px;
@@ -119,7 +120,7 @@
   }
 
   &::-moz-range-thumb {
-    //-moz-appearance: none;
+    -moz-appearance: none;
     width: 14px;
     height: 14px;
     border: 2px solid $pink-color;
@@ -127,6 +128,7 @@
     background-color: $white-color;
     cursor: pointer;
   }
+  /* stylelint-enable */
 
   &::-moz-range-thumb:active {
     background-color: $pink-color;
