@@ -47,10 +47,16 @@
     padding-left: 10px;
     width: 181px;
     justify-content: space-between;
-    outline: 2px solid green;
   }
 
   .social__item {
     margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .social {
+    padding-left: 13px;
+    width: 181px;
   }
 }

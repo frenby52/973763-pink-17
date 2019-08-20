@@ -3,11 +3,11 @@
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  color: $dark-blue-color;
+  color: $pink-color;
 
   &:hover .copyright__image,
   &:focus .copyright__image {
-    fill: $pink-color;
+    fill: $dark-blue-color;
   }
 
   &:active .copyright__image {
@@ -37,6 +37,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .copyright {
+    padding-top: 0;
+  }
+
   .copyright__text {
     font-size: 18px;
   }

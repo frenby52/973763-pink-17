@@ -1,0 +1,26 @@
+.feedback {
+  width: 280px;
+}
+
+.feedback__controls {
+  margin-top: 32px;
+  margin-bottom: 42px;
+}
+
+@media (min-width: $tablet-width) {
+  .feedback {
+    width: 620px;
+  }
+
+  .feedback__controls {
+    margin-top: 35px;
+    margin-bottom: 21px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .feedback {
+    position: relative;
+    width: 940px;
+  }
+}

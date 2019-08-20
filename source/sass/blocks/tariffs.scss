@@ -1,0 +1,44 @@
+.tariffs {
+  background-color: $lightgray-color-bg;
+  background-image: url("../img/bg-triangle-white.svg");
+  background-size: contain;
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-clip: border-box;
+}
+
+.tariffs__wrapper {
+  margin: 0 auto;
+  width: 320px;
+  padding-top: 91px;
+  overflow: hidden;
+}
+
+.tariffs__controls {
+  margin-top: 40px;
+  margin-bottom: 46px;
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs__wrapper {
+    width: 620px;
+    padding-top: 89px;
+    padding-bottom: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .tariffs__controls {
+    display: none;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs__wrapper {
+    width: 940px;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 147px;
+    padding-bottom: 96px;
+  }
+}

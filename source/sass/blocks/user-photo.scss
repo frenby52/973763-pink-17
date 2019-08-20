@@ -38,11 +38,11 @@
   .user-photo__post {
     width: 300px;
     margin-bottom: 20px;
-  }
 
-  .user-photo__post--panorama {
-    width: auto;
-    margin-bottom: 50px;
+    &--panorama {
+      width: auto;
+      margin-bottom: 50px;
+    }
   }
 }
 
