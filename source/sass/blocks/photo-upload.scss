@@ -106,8 +106,8 @@
   &::-webkit-slider-thumb {
     -webkit-appearance: none;
     box-sizing: content-box;
-    width: 14px;
-    height: 14px;
+    width: 11px;
+    height: 11px;
     margin-top: -7px;
     border: 2px solid $pink-color;
     border-radius: 50%;
@@ -121,8 +121,8 @@
 
   &::-moz-range-thumb {
     -moz-appearance: none;
-    width: 14px;
-    height: 14px;
+    width: 11px;
+    height: 11px;
     border: 2px solid $pink-color;
     border-radius: 50%;
     background-color: $white-color;
@@ -135,8 +135,8 @@
   }
 
   &::-ms-thumb {
-    width: 14px;
-    height: 14px;
+    width: 11px;
+    height: 11px;
     padding: 0;
     border: 2px solid $pink-color;
     border-radius: 50%;
