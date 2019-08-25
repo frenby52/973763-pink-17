@@ -23,6 +23,7 @@
 }
 
 .contest-form__fieldset {
+  position: relative;
   margin: 0;
   padding: 0;
   border: none;
@@ -37,7 +38,10 @@
 }
 
 .contest-form__legend {
-  width: 220px;
+  display: block;
+  box-sizing: border-box;
+  padding: 0 24px;
+  width: 100%;
   font-size: 14px;
   font-weight: 400;
   line-height: 18px;
@@ -91,7 +95,7 @@
       position: absolute;
       content: none;
       left: 8px;
-      top: 5px;
+      top: 7px;
       transform: rotate(-45deg);
       width: 21px;
       height: 10px;
@@ -348,23 +352,32 @@
   }
 
   .contest-form__legend {
-    width: auto;
+    position: absolute;
+    z-index: 5;
+    left: 0;
+    top: 0;
+    transform: translateY(-50%);
+    padding: 0;
     line-height: 30px;
 
     &--contacts {
       display: block;
-      padding-right: 32px;
-      padding-left: 32px;
+    }
+  }
+
+  .contest-form__legend-text {
+    display: inline-flex;
+    max-width: 90%;
+    background-color: $white-color;
+
+    &::before {
+      content: "";
+      margin-right: 30px;
     }
 
-    &--user-app {
-      padding-right: 25px;
-      padding-left: 25px;
-    }
-
-    &--message {
-      padding-right: 38px;
-      padding-left: 40px;
+    &::after {
+      content: "";
+      margin-left: 30px;
     }
   }
 
@@ -406,6 +419,10 @@
     background-color: $white-color;
   }
 
+  .contest-form__list--user-app {
+    margin-top: 50px;
+  }
+
   .contest-form__user-app-item {
     margin-bottom: 38px;
   }
@@ -423,6 +440,10 @@
     padding-left: 59px;
     padding-right: 59px;
     padding-bottom: 22px;
+  }
+
+  .contest-form__list--contacts {
+    margin-top: 12px;
   }
 
   .contest-form__contacts-item {
@@ -468,7 +489,7 @@
   }
 
   .contest-form__list--achieves {
-    margin-top: 38px;
+    margin-top: 48px;
   }
 
   .contest-form__achieves-item {
@@ -482,27 +503,28 @@
   }
 
   .contest-form__textarea {
-    margin-top: 31px;
+    margin-top: 43px;
     min-height: 192px;
   }
 
   .contest-form__username-wrapper {
+    padding-bottom: 42px;
     order: 1;
   }
 
   .contest-form__user-achieves-wrapper {
     order: 4;
-    padding-bottom: 15px;
+    padding-bottom: 32px;
   }
 
   .contest-form__contacts-wrapper {
     order: 3;
-    padding-bottom: 13px;
+    padding-bottom: 30px;
   }
 
   .contest-form__user-app-wrapper {
     order: 2;
-    padding-bottom: 20px;
+    padding-bottom: 36px;
     padding-top: 28px;
   }
 
@@ -576,7 +598,7 @@
     margin-left: 0;
     margin-right: 0;
     width: 433px;
-    padding-top: 0;
+    padding-top: 17px;
   }
 
   .contest-form__list--user-app {
@@ -584,8 +606,8 @@
   }
 
   .contest-form__contacts-wrapper {
-    padding-top: 29px;
-    padding-bottom: 15px;
+    padding-top: 27px;
+    padding-bottom: 34px;
   }
 
   .contest-form__fieldset--contacts {
@@ -643,6 +665,7 @@
 
   .contest-form__textarea {
     padding-top: 12px;
+    margin-top: 41px;
     min-height: 126px;
   }
 

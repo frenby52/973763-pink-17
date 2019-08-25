@@ -4,6 +4,7 @@
   height: 200px;
   background: $lightgray-color-bg no-repeat url("../img/bg-map-mobile@1x.png") 50% 100%;
   background-size: 320px 645px;
+  overflow: hidden;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.jpg");

@@ -135,9 +135,10 @@
   }
 
   &::-ms-thumb {
+    margin-top: 0;
+    padding: 0;
     width: 11px;
     height: 11px;
-    padding: 0;
     border: 2px solid $pink-color;
     border-radius: 50%;
     background-color: $white-color;
