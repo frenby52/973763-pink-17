@@ -30,6 +30,7 @@
 
 .page-footer__logo-image {
   fill: currentColor;
+  pointer-events: none;
 
   &--mobile {
     display: block;

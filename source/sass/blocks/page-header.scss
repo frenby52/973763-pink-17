@@ -47,6 +47,7 @@
 
 .page-header__logo-image {
   fill: currentColor;
+  pointer-events: none;
 
   &--mobile {
     display: block;
@@ -92,6 +93,7 @@
 
 .page-header__toggle-icon {
   fill: currentColor;
+  pointer-events: none;
 }
 
 .page-header__main-nav--closed .page-header__toggle-icon--cross {
